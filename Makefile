@@ -1,8 +1,8 @@
 build:
-	@go build -o bin/diplipito
+	@go1.24.2 build -o bin/diplipito
 
 run: build
 	 @./bin/diplipito
 
 test:
-	@go test ./... -v --race
+	@go1.24.2 test ./... -v --race
